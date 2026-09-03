@@ -1,0 +1,453 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asociația HOINARII — CUI 54680070 • Dăruim unde doare • Târgu Neamț</title>
+<meta name="description" content="Hoinarii mergem la case de copii, la oameni vulnerabili cu sănătate precară — ducem produse, articole, necesități. CUI 54680070 • IBAN RO22 BTRL RONC RT0D F0690401 • ANAF 10.06.2026">
+<link rel="icon" href="hoinarii-logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0A0F1E;--lime:#E7FF4A;--coral:#FF3E2E;--violet:#7C4DFF;--cyan:#2EF2FF;--cream:#FFFBF0;--line:rgba(10,15,30,.08)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Space Grotesk',system-ui,sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+/* NAV WOW */
+.nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:50;width:min(1220px,calc(100% - 18px));background:rgba(255,255,255,.82);backdrop-filter:blur(18px) saturate(1.2);border:1px solid rgba(10,15,30,.08);border-radius:999px;display:flex;align-items:center;justify-content:space-between;padding:8px 10px 8px 14px;box-shadow:0 20px 60px rgba(10,15,30,.12)}
+.brand{display:flex;align-items:center;gap:10px}
+.brand img{height:44px;width:44px;object-fit:cover;border-radius:50%;border:2px solid white;box-shadow:0 6px 20px rgba(10,15,30,.15)}
+.brand b{font-family:'Syne';font-weight:800;letter-spacing:-.04em;font-size:16px;line-height:1}
+.brand span{font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.6;font-weight:700}
+.nav-links{display:flex;gap:4px;align-items:center}
+.nav-links a{padding:9px 14px;border-radius:999px;font-weight:700;font-size:13px;transition:.2s}
+.nav-links a:hover{background:rgba(10,15,30,.06)}
+.cta{ background:var(--ink);color:white;padding:11px 18px;border-radius:999px;font-weight:800;font-size:13px;display:inline-flex;gap:8px;align-items:center;box-shadow:0 10px 30px rgba(10,15,30,.22);transition:.2s}
+.cta:hover{transform:translateY(-1px) scale(1.02)}
+.cta span{background:var(--lime);color:var(--ink);padding:3px 8px;border-radius:999px;font-size:11px}
+.hamb{display:none;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:white;display:none;place-items:center}
+
+/* HERO WOW */
+.hero{position:relative;min-height:100vh;display:grid;place-items:center;background:var(--ink);overflow:hidden;color:white;padding:110px 18px 40px}
+.mesh{position:absolute;inset:-20%;background:radial-gradient(600px 600px at 20% 10%, rgba(231,255,74,.45), transparent 60%), radial-gradient(700px 700px at 85% 15%, rgba(255,62,46,.35), transparent 60%), radial-gradient(600px 600px at 60% 90%, rgba(124,77,255,.35), transparent 60%), radial-gradient(500px 500px at 10% 85%, rgba(46,242,255,.18), transparent 60%);filter:blur(0px);animation:drift 12s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate(20px,-20px) scale(1.04)}}
+.grid-overlay{position:absolute;inset:0;background:linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);background-size:40px 40px;opacity:.18;mask:radial-gradient(800px 600px at 50% 0%, black, transparent 78%)}
+.hero-inner{position:relative;z-index:2;width:min(1220px,100%);display:grid;grid-template-columns:1.08fr .92fr;gap:28px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(10px);padding:7px 12px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.eyebrow i{width:8px;height:8px;background:var(--lime);border-radius:50%;box-shadow:0 0 0 8px rgba(231,255,74,.14);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.6}}
+.hero h1{font-family:'Syne';font-weight:800;font-size:clamp(36px,5.8vw,72px);line-height:.88;letter-spacing:-.05em;margin:14px 0 12px}
+.hero h1 em{font-family:'Instrument Serif';font-weight:400;font-style:italic;color:var(--lime);letter-spacing:-.03em}
+.hero p{font-family:'DM Sans';font-size:17px;line-height:1.55;color:rgba(255,255,255,.86);max-width:560px}
+.hero-actions{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+.btn{padding:16px 22px;border-radius:999px;font-weight:800;font-size:14px;display:inline-flex;gap:8px;align-items:center;transition:.2s;border:none;cursor:pointer}
+.btn-lime{background:var(--lime);color:var(--ink);box-shadow:0 16px 40px rgba(231,255,74,.35)}
+.btn-lime:hover{transform:translateY(-2px) scale(1.02)}
+.btn-ghost{background:rgba(255,255,255,.08);color:white;border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(8px)}
+.btn-ghost:hover{background:rgba(255,255,255,.14)}
+.stats{display:flex;gap:14px;flex-wrap:wrap;margin-top:16px}
+.stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px);padding:12px 14px;border-radius:18px;min-width:140px}
+.stat b{font-family:'Syne';font-size:22px;letter-spacing:-.04em;display:block}
+.stat span{font-size:10px;letter-spacing:.12em;text-transform:uppercase;opacity:.7;font-weight:700}
+/* HERO CARD STACK */
+.stack{position:relative;height:560px}
+.card{position:absolute;border-radius:26px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.12)}
+.card-1{inset:0 0 0 18px;transform:rotate(1.2deg);background:white}
+.card-1 img{width:100%;height:100%;object-fit:cover}
+.card-2{left:-8px;top:18px;background:white;padding:12px 14px;display:flex;gap:10px;align-items:center;transform:rotate(-1.5deg);color:var(--ink);font-weight:800;font-size:13px}
+.card-3{right:-10px;bottom:84px;background:var(--lime);color:var(--ink);padding:12px 14px;border-radius:18px;transform:rotate(1.8deg);font-weight:800;font-size:12px;box-shadow:0 16px 40px rgba(231,255,74,.35)}
+.card-bar{position:absolute;left:14px;right:14px;bottom:14px;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-radius:18px;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px;color:var(--ink)}
+.avatars{display:flex}
+.avatars img{width:30px;height:30px;border-radius:50%;border:2px solid white;margin-left:-8px;object-fit:cover}
+.avatars img:first-child{margin:0}
+
+/* TICKER */
+.ticker{background:var(--lime);color:var(--ink);padding:10px 0;overflow:hidden;white-space:nowrap;font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:11px;border-y:1px solid rgba(10,15,30,.08)}
+.track{display:inline-flex;gap:28px;animation:marq 18s linear infinite;align-items:center}
+.track i{width:7px;height:7px;background:var(--coral);border-radius:50%;display:inline-block}
+@keyframes marq{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* SECTIONS */
+.wrap{width:min(1220px,calc(100% - 24px));margin:0 auto}
+.section{padding:56px 0}
+.kicker{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--coral);display:flex;gap:10px;align-items:center}
+.kicker::before{content:'';width:28px;height:3px;background:var(--coral);border-radius:999px}
+.h2{font-family:'Syne';font-weight:800;font-size:clamp(28px,4.2vw,48px);line-height:.92;letter-spacing:-.04em;color:var(--ink);margin:10px 0 12px}
+.h2 em{font-family:'Instrument Serif';font-style:italic;font-weight:400;color:var(--violet)}
+.lead{color:#3A445E;line-height:1.6;font-size:16px;max-width:760px}
+
+/* BENTO */
+.bento{margin-top:20px;display:grid;grid-template-columns:1.2fr .8fr;gap:16px;align-items:start}
+.glass{background:white;border:1px solid var(--line);border-radius:28px;padding:24px;box-shadow:0 16px 50px rgba(10,15,30,.06)}
+.glass h3{font-family:'Syne';font-size:22px;letter-spacing:-.03em}
+.checks{margin-top:12px;display:grid;gap:10px}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.45}
+.check em{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;flex-shrink:0;font-style:normal;font-weight:800}
+.c1 em{background:var(--lime)}
+.c2 em{background:var(--coral);color:white}
+.c3 em{background:var(--violet);color:white}
+.c4 em{background:var(--cyan)}
+.c5 em{background:var(--ink);color:white}
+.id-wow{background:var(--ink);color:white;border-radius:28px;padding:24px 22px;position:relative;overflow:hidden}
+.id-wow .row{gap:14px}
+.id-wow::after{content:'';position:absolute;inset:0;background:radial-gradient(400px 300px at 80% 0%, rgba(231,255,74,.18), transparent 60%), radial-gradient(400px 300px at 10% 100%, rgba(255,62,46,.16), transparent 60%);pointer-events:none}
+.id-head{font-size:10px;letter-spacing:.16em;text-transform:uppercase;opacity:.6;margin-bottom:10px}
+.row{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px}
+.row:last-child{border:0}
+.row b{font-weight:800}
+.copy{background:var(--lime);color:var(--ink);border:none;padding:6px 10px;border-radius:999px;font-weight:800;font-size:11px;cursor:pointer}
+
+/* WOW GRID - ACTIVITATI REALE */
+.real{margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.real-card{background:white;border:1px solid var(--line);border-radius:24px;padding:20px;position:relative;overflow:hidden;transition:.25s}
+.real-card:hover{transform:translateY(-6px) rotate(.2deg);box-shadow:0 20px 50px rgba(10,15,30,.12)}
+.real-card.big{grid-column:span 2;background:linear-gradient(135deg, #0A0F1E 0%, #1A2340 100%);color:white;border:none}
+.real-card.big p{color:rgba(255,255,255,.78)}
+.real-icon{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;font-size:18px;margin-bottom:12px}
+.r1 .real-icon{background:var(--lime)}
+.r2 .real-icon{background:var(--coral);color:white}
+.r3 .real-icon{background:var(--violet);color:white}
+.r4 .real-icon{background:var(--cyan)}
+.r5 .real-icon{background:#FFD23F}
+.tag{position:absolute;top:12px;right:12px;background:var(--lime);padding:6px 10px;border-radius:999px;font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--ink)}
+
+/* IMPACT WOW */
+.impact{margin-top:18px;background:var(--ink);color:white;border-radius:32px;padding:28px;display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:center;position:relative;overflow:hidden}
+.impact::before{content:'';position:absolute;inset:0;background:radial-gradient(600px 400px at 15% 10%, rgba(231,255,74,.14), transparent 70%), radial-gradient(500px 500px at 90% 30%, rgba(255,62,46,.16), transparent 70%)}
+.counters{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.counter{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);backdrop-filter:blur(8px);border-radius:18px;padding:16px;text-align:center}
+.counter b{font-family:'Syne';font-size:30px;letter-spacing:-.04em;display:block}
+.counter span{font-size:10px;letter-spacing:.12em;text-transform:uppercase;opacity:.6;font-weight:800}
+
+/* DGASPC BENTO WOW */
+.partners{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;margin-top:16px}
+.partner-card{background:white;border:1px solid var(--line);border-radius:24px;padding:22px}
+.partner-dark{background:var(--ink);color:white;border-radius:24px;padding:22px;position:relative;overflow:hidden}
+.chip{padding:7px 10px;border-radius:999px;font-size:11px;font-weight:800;display:inline-flex;gap:6px;align-items:center}
+.chip-lime{background:var(--lime);color:var(--ink)}
+.chip-white{background:white;border:1px solid var(--line)}
+
+/* DONATIE */
+.donate{display:grid;grid-template-columns:1.05fr .95fr;gap:16px;margin-top:16px}
+.donate-left{background:white;border:1px solid var(--line);border-radius:28px;padding:24px}
+.donate-right{background:linear-gradient(180deg, #0A0F1E 0%, #141E3A 100%);color:white;border-radius:28px;padding:24px;position:relative;overflow:hidden;text-align:center}
+.donate-right::after{content:'';position:absolute;inset:0;background:radial-gradient(500px 400px at 50% 0%, rgba(231,255,74,.18), transparent 70%);pointer-events:none}
+.big{font-family:'Syne';font-size:82px;letter-spacing:-.06em;line-height:.85;font-weight:800}
+.big small{font-size:26px;vertical-align:super}
+
+/* FOOTER */
+footer{margin-top:20px;background:var(--ink);color:rgba(255,255,255,.86);border-radius:32px 32px 0 0;padding:28px 18px}
+.footer{width:min(1220px,calc(100% - 24px));margin:0 auto;display:grid;grid-template-columns:1.4fr .8fr 1fr;gap:22px}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(16px);transition:.6s}
+.reveal.in{opacity:1;transform:none}
+
+/* RESPONSIVE */
+@media(max-width:980px){
+  .hero-inner,.bento,.partners,.donate,.impact{grid-template-columns:1fr}
+  .real{grid-template-columns:1fr 1fr}
+  .real-card.big{grid-column:span 1}
+  .nav-links{display:none}
+  .nav-links.open{display:flex;position:absolute;top:62px;left:0;right:0;background:white;border-radius:22px;padding:12px;flex-direction:column;box-shadow:0 20px 60px rgba(10,15,30,.14);border:1px solid var(--line)}
+  .hamb{display:grid}
+  .stack{height:420px}
+  .footer{grid-template-columns:1fr}
+}
+@media(max-width:640px){.real{grid-template-columns:1fr}.counters{grid-template-columns:1fr}.big{font-size:64px}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="brand" href="#acasa">
+    <img src="hoinarii-logo.png" alt="Hoinarii" onerror="this.src='https://scontent.fbcm1-1.fna.fbcdn.net/v/t39.30808-1/468862122_584652697306603_2329388760797295664_n.jpg?stp=dst-jpg_tt6&cstp=mx2033x2048&ctp=s720x720&_nc_cat=100&ccb=1-7&_nc_sid=3ab345&_nc_ohc=Ow0p8S0KdeMQ7kNvwFeZqs7&_nc_oc=Adr8qoAkeLyJb9kZlVljF73TWTAmpBjF6z2P2prXF7fdD5mu4oGw2ZP3MWt3UJshZqU&_nc_zt=24&_nc_ht=scontent.fbcm1-1.fna&_nc_gid=qcUa20I_WIpkkNEvyElDGQ'">
+    <div><b>HOINARII</b><br><span>CUI 54680070 • Târgu Neamț</span></div>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="#despre">Despre</a>
+    <a href="#fapte">Fapte caritabile</a>
+    <a href="despre.html">Statut & Etică</a>
+    <a href="#voluntari" style="background:var(--ink);color:white;padding:10px 16px;border-radius:999px;font-weight:800;font-size:13px">Alătură-te →</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <a href="#" onclick="openDonate();return false" style="background:var(--lime);color:var(--ink);padding:10px 16px;border-radius:999px;font-weight:800;font-size:13px;display:inline-flex;gap:6px;align-items:center">Donează ♡</a>
+    <a class="cta" href="https://ing.redirectioneaza.ro/asociatia-hoinarii/" target="_blank">Redirecționează <span>3,5% gratuit</span></a>
+  </div>
+  <button class="hamb" id="menuBtn">☰</button>
+</nav>
+
+<section class="hero" id="acasa">
+  <div class="mesh"></div>
+  <div class="grid-overlay"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow"><i></i> Asociație verificată ANAF</div>
+      <h1>Dăruim<br><em>unde doare.</em><br>Mergem<br>până la ușă.</h1>
+      <p>Suntem <b>Hoinarii din Târgu Neamț</b> — mergem la <b>case de copii</b>, la oameni cu <b>sănătate precară</b> și familii vulnerabile. Ducem <b>produse, articole și necesități</b> — în limita în care ne încadrăm, dar cu inima toată. Filantropie pe bune, nu pe hârtie.</p>
+      <div class="hero-actions">
+        <a class="btn btn-lime" href="https://ing.redirectioneaza.ro/asociatia-hoinarii/" target="_blank">Susține cu 3,5% — gratuit ↗</a>
+        <a href="#voluntari" class="btn" style="background:white;color:var(--ink);border:1px solid rgba(255,255,255,.9);box-shadow:0 8px 20px rgba(0,0,0,.12)">Alătură-te →</a>
+        <a href="#" onclick="openDonate();return false" class="btn btn-ghost" style="background:var(--lime);color:var(--ink);border:none">Donează ♡</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>54680070</b><span>CUI • ASOCIAȚIA HOINARII</span></div>
+        <div class="stat"><b>RO22 BTRL</b><span>Banca Transilvania • RON</span></div>
+        <div class="stat"><b>1650/A</b><span>ONG Neamț</span></div>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="card card-1"><img src="community.jpg" alt="Voluntari Hoinarii"></div>
+      <div class="card card-2"> <span style="width:34px;height:34px;border-radius:50%;background:var(--lime);display:grid;place-items:center">♥</span> Mergem la case de copii & familii</div>
+      <div class="card card-3">📦 Produse • Articole • Necesități</div>
+      <a href="https://www.facebook.com/Hoinarii.Original" target="_blank" class="card-bar" style="text-decoration:none">
+        <div style="display:flex;gap:10px;align-items:center">
+          <div class="avatars"><img src="https://i.pravatar.cc/100?img=12"><img src="https://i.pravatar.cc/100?img=15"><img src="https://i.pravatar.cc/100?img=33"></div>
+          <div><b style="font-size:13px">Următoarea vizită: case de copii Neamț</b><br><span style="font-size:11px;opacity:.6;letter-spacing:.08em;text-transform:uppercase;font-weight:700">Înscrie-te voluntar pe Facebook ↗</span></div>
+        </div>
+        <span style="background:var(--lime);padding:7px 10px;border-radius:999px;font-weight:800;font-size:11px;color:var(--ink)">NOU</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="ticker"><div class="track"><span>Hoinarii — Târgu Neamț</span><i></i><span>Case de copii</span><i></i><span>Oameni vulnerabili</span><i></i><span>Sănătate precară</span><i></i><span>Produse & necesități</span><i></i><span>Filantropie reală</span><i></i><span>Radioamatorism YO</span><i></i><span>Hoinarii — Târgu Neamț</span><i></i><span>Case de copii</span><i></i><span>Oameni vulnerabili</span><i></i><span>Sănătate precară</span><i></i><span>Produse & necesități</span><i></i></div></div>
+
+<section class="section wrap" id="despre">
+  <div class="kicker">Cine suntem — pe bune</div>
+  <h2 class="h2">Hoinărim cu rost. <em>Nu cu vorbe.</em></h2>
+  <p class="lead">Asociația „HOINARII” (CUI 54680070, ONG 1650/A) are ca scop filantropia pură: ajutor în diverse forme pentru persoane defavorizate. Plus ce ne arde: drumeții, ciclism, radio YO — ca tinerii să aibă unde crește frumos.</p>
+
+  <div class="bento">
+    <div class="glass reveal">
+      <h3>Ce facem — cuvânt din statut, faptă din teren</h3>
+      <p style="color:#3A445E;line-height:1.6;margin-top:8px;font-size:14.5px">„Acordarea de sprijin umanitar și social persoanelor defavorizate, promovarea participării active…” — <a href="despre.html" style="text-decoration:underline;font-weight:700;color:var(--ink)">vezi Statutul & Codul de Etică →</a></p>
+      <div class="checks">
+        <div class="check c1"><em>♥</em><span><b>Filantropie la ușă</b> — mergem la oameni vulnerabili, cu sănătate precară, familii greu încercate. Ducem <b>produse, articole, alimente, igienă, necesități</b> — cât ne încadrăm, dar regulat.</span></div>
+        <div class="check c2"><em>👧</em><span><b>Case de copii</b> — vizite, donații, activități. Nu o dată pe an, ci când e nevoie și când putem.</span></div>
+        <div class="check c3"><em>📦</em><span><b>Plasare concretă</b> — nu promisiuni: sortăm, verificăm nevoia, livrăm și arătăm poze/raport.</span></div>
+        <div class="check c4"><em>⛰</em><span><b>Munte & bicicletă</b> — drumeții, ciclism, camping, turism montan pentru copii și tineri.</span></div>
+        <div class="check c5"><em>📻</em><span><b>Radio & civic</b> — YO radioamatorism, STEM, educație civică și puntea cu instituțiile.</span></div>
+      </div>
+      <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap">
+        <span class="chip chip-lime">ANAF verificat ✓</span>
+        <span class="chip chip-white">Str. Daciei, Nr. 9 • Târgu Neamț</span>
+        <a href="https://www.facebook.com/Hoinarii.Original" target="_blank" style="background:var(--ink);color:white;padding:8px 14px;border-radius:999px;font-weight:800;font-size:12px">Facebook ↗</a>
+      </div>
+    </div>
+    <div class="id-wow reveal">
+      <div class="id-head">Fișă oficială verificată</div>
+      <div class="row"><span>Denumire</span><b>ASOCIAȚIA "HOINARII"</b></div>
+      <div class="row"><span>CUI</span><b>54680070</b> <button class="copy" onclick="copyText('54680070')">Copiază</button></div>
+      <div class="row"><span>ONG</span><b>1650/A/2026 • Neamț</b></div>
+      <div class="row"><span>ANAF 3,5%</span><b style="color:var(--lime)">Înscrisă ✓</b></div>
+      <div class="row"><span>Status</span><b>Verificat • ID 192768468</b></div>
+      <div class="row" style="align-items:center"><span>IBAN</span><b style="font-family:monospace;font-size:11px;word-break:break-all;text-align:right;flex:1;margin-right:8px">RO22 BTRL RONC RT0D F069 0401</b> <button class="copy" onclick="copyText('RO22BTRLRONCRT0DF0690401')">Copiază</button></div>
+      <div class="row"><span>Bancă</span><b>Banca Transilvania • BTRLRO22</b></div>
+      <div style="margin-top:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);border-radius:14px;padding:12px;font-size:11px;line-height:1.5">SWIFT: BTRLRO22<br><span style="opacity:.6">Sursa: ANAF + Registrul Național ONG</span></div>
+      <a href="https://ing.redirectioneaza.ro/asociatia-hoinarii/" target="_blank" style="display:block;margin-top:12px;background:var(--lime);color:var(--ink);padding:13px;border-radius:999px;text-align:center;font-weight:800">Formular 230 — 2 minute →</a>
+    </div>
+  </div>
+
+  <!-- FAPTE REALE WOW - SIMPLIFICAT -->
+  <div class="real" id="fapte">
+    <div class="real-card reveal" style="background:white;color:var(--ink);border:1px solid var(--line);padding:28px;grid-column:span 2">
+      <div style="display:flex;gap:14px;align-items:flex-start">
+        <div class="real-icon" style="background:var(--lime);flex-shrink:0">📦</div>
+        <div style="flex:1;min-width:0">
+          <h3 style="font-family:'Syne';font-size:22px;letter-spacing:-.03em;color:var(--ink);line-height:1.2">Ajutor direct la domiciliu</h3>
+          <p style="margin-top:12px;font-size:15px;line-height:1.75;color:#3A445E;white-space:normal;word-break:normal">Întrebăm ce e nevoie, cumpărăm și ducem personal.</p>
+          <p style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px">
+            <span style="background:#FFFBF0;border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:13px;font-weight:700">alimente</span>
+            <span style="background:#FFFBF0;border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:13px;font-weight:700">produse igienă</span>
+            <span style="background:#FFFBF0;border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:13px;font-weight:700">haine</span>
+            <span style="background:#FFFBF0;border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:13px;font-weight:700">rechizite</span>
+          </p>
+          <p style="margin-top:12px;font-size:13px;line-height:1.6;color:#6B7688;border-top:1px solid var(--line);padding-top:10px">Atât cât ne permite bugetul — cu respect și discreție. Fără poze cu fețe, doar dovada livrării.</p>
+        </div>
+      </div>
+    </div>
+    <div class="real-card r2 reveal"><div class="real-icon">🏠</div><h3>Case de copii</h3><p style="font-size:13.5px;color:#3A445E;line-height:1.5;margin-top:6px">Vizite cu dulciuri, fructe, igienă și timp petrecut cu copiii. Venim cu brațele pline, nu cu blitz-ul.</p></div>
+    <div class="real-card r3 reveal"><div class="real-icon">🩺</div><h3>Oameni vulnerabili</h3><p style="font-size:13.5px;color:#3A445E;line-height:1.5;margin-top:6px">Vârstnici singuri, familii cu sănătate precară — ajungem acolo unde ajutorul întârzie.</p></div>
+    <div class="real-card r4 reveal"><div class="real-icon">⛰</div><h3>Munte & tineri</h3><p style="font-size:13.5px;color:#3A445E;line-height:1.5;margin-top:6px">Drumeții, bicicletă, tabere la cort — scoatem tinerii în natură.</p></div>
+    <div class="real-card r5 reveal" style="background:linear-gradient(135deg, #E7FF4A, #FFD23F);border:none"><div class="real-icon" style="background:white">📻</div><h3>YO • Radio</h3><p style="font-size:13.5px;line-height:1.5;margin-top:6px;color:var(--ink)">Ateliere radio & tehnologie — comunicații care unesc și educă.</p></div>
+  </div>
+</section>
+
+
+
+<section class="section wrap" id="doneaza" style="padding-top:0">
+  <div class="donate">
+    <div class="donate-left reveal">
+      <div class="kicker">Susține gratuit</div>
+      <h3 style="font-family:'Syne';font-size:30px;letter-spacing:-.04em;line-height:.95;margin-top:8px">Redirecționează <em style="font-family:'Instrument Serif';font-style:italic;color:var(--coral)">3,5%</em></h3>
+      <p style="color:#3A445E;line-height:1.6;margin-top:8px;font-size:14px">Nu e donație din buzunar. E o parte din impozitul deja plătit care vine la noi dacă bifezi. 2 minute, o dată pe an — gratuit pentru tine.</p>
+      <div style="margin-top:14px;display:grid;gap:10px">
+        <div style="display:flex;gap:10px;align-items:center;background:#FFFBF0;border:1px solid var(--line);border-radius:14px;padding:12px"><span style="width:28px;height:28px;border-radius:50%;background:var(--ink);color:white;display:grid;place-items:center;font-weight:800">1</span><b style="font-size:13px">Formular 230 precompletat — CUI 54680070</b></div>
+        <div style="display:flex;gap:10px;align-items:center;background:#FFFBF0;border:1px solid var(--line);border-radius:14px;padding:12px"><span style="width:28px;height:28px;border-radius:50%;background:var(--ink);color:white;display:grid;place-items:center;font-weight:800">2</span><b style="font-size:13px">Semnezi & depui în SPV-ANAF / poștă</b></div>
+        <div style="display:flex;gap:10px;align-items:center;background:#FFFBF0;border:1px solid var(--line);border-radius:14px;padding:12px"><span style="width:28px;height:28px;border-radius:50%;background:var(--lime);display:grid;place-items:center;font-weight:800">3</span><b style="font-size:13px">Noi livrăm & îți trimitem raport foto</b></div>
+      </div>
+      <div style="margin-top:14px;background:white;border:1px dashed rgba(10,15,30,.14);border-radius:16px;padding:14px;display:grid;gap:8px">
+        <div style="display:flex;justify-content:space-between;gap:8px;font-size:13px"><span style="opacity:.5">Beneficiar</span><b>ASOCIAȚIA "HOINARII"</b></div>
+        <div style="display:flex;justify-content:space-between;gap:8px;font-size:13px;align-items:center"><span style="opacity:.5">CUI</span><b style="font-family:monospace">54680070</b> <button class="copy" onclick="copyText('54680070')">Copiază</button></div>
+        <div style="display:flex;justify-content:space-between;gap:8px;font-size:13px;align-items:center"><span style="opacity:.5">IBAN</span><b style="font-family:monospace;font-size:11px">RO22BTRLRONCRT0DF0690401</b> <button class="copy" onclick="copyText('RO22BTRLRONCRT0DF0690401')">Copiază</button></div>
+        <div style="display:flex;justify-content:space-between;gap:8px;font-size:13px"><span style="opacity:.5">Bancă</span><b>Banca Transilvania • BTRLRO22</b></div>
+      </div>
+    </div>
+    <div class="donate-right reveal" style="padding:32px 26px;display:flex;flex-direction:column;gap:14px;justify-content:center">
+      <div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;opacity:.6">Formular 230 • ANAF</div>
+      <div class="big" style="line-height:1">3,5<small>%</small></div>
+      <p style="opacity:.85;line-height:1.7;font-size:14px;margin:0">Gratuit pentru tine. Esențial pentru ei.<br><span style="opacity:.9">Donația ta devine pachet la ușă.</span></p>
+      <a href="https://ing.redirectioneaza.ro/asociatia-hoinarii/" target="_blank" style="display:block;background:var(--lime);color:var(--ink);padding:16px;border-radius:999px;font-weight:800;text-align:center;margin-top:4px">Completează online 2 min ↗</a>
+      <div style="margin-top:6px;padding-top:12px;border-top:1px solid rgba(255,255,255,.12);font-size:11px;opacity:.65;line-height:1.6">CUI 54680070 • RO22 BTRL RONC RT0D F069 0401<br>Str. Daciei, Nr. 9, Târgu Neamț</div>
+    </div>
+  </div>
+</section>
+
+<!-- VOLUNTARI + HARTA OSM -->
+<section class="section wrap" id="voluntari" style="padding-top:0">
+  <div style="display:grid;grid-template-columns:1.05fr .95fr;gap:16px">
+    <!-- FORMULAR -->
+    <div class="reveal" style="background:white;border:1px solid var(--line);border-radius:28px;padding:26px">
+      <div class="kicker">Alătură-te</div>
+      <h3 style="font-family:'Syne';font-size:28px;letter-spacing:-.04em;line-height:.95;margin-top:8px">Devino voluntar Hoinarii</h3>
+      <p style="color:#3A445E;line-height:1.6;margin-top:8px;font-size:14px">Completezi în 30 secunde — te contactăm pe WhatsApp/telefon. Alegi ce ți se potrivește: case de copii, livrări, munte sau radio.</p>
+      <form id="volForm" action="https://formsubmit.co/contact.hoinarii@gmail.com" method="POST" style="margin-top:16px;display:grid;gap:12px">
+        <input type="hidden" name="_subject" value="Voluntar nou - Hoinarii (site)">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://example.com/multumim.html">
+        <input type="text" name="_honey" style="display:none">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+          <label style="display:grid;gap:6px;font-size:12px;font-weight:700">Nume<input name="nume" required placeholder="Ex: Maria Popa" style="padding:12px 14px;border:1px solid var(--line);border-radius:14px;font-size:14px"></label>
+          <label style="display:grid;gap:6px;font-size:12px;font-weight:700">Telefon / Email<input name="contact" required placeholder="07xx / email" style="padding:12px 14px;border:1px solid var(--line);border-radius:14px;font-size:14px"></label>
+        </div>
+        <label style="display:grid;gap:6px;font-size:12px;font-weight:700">Cu ce vrei să ajuți?
+          <select name="rol" style="padding:12px 14px;border:1px solid var(--line);border-radius:14px;font-size:14px;background:white">
+            <option>Case de copii — vizite & pachete</option>
+            <option>Livrări la domiciliu — produse & necesități</option>
+            <option>Munte & tineri — drumeții / ciclism / tabere</option>
+            <option>Radio & STEM — ateliere YO</option>
+            <option>Oricum e nevoie</option>
+          </select>
+        </label>
+        <label style="display:grid;gap:6px;font-size:12px;font-weight:700">Mesaj (opțional)<textarea name="mesaj" rows="3" placeholder="Disponibilitate, oraș, experiență..." style="padding:12px 14px;border:1px solid var(--line);border-radius:14px;font-size:14px;resize:vertical"></textarea></label>
+        <button type="submit" style="background:var(--ink);color:white;padding:14px;border-radius:999px;font-weight:800;border:none;cursor:pointer;display:flex;justify-content:center;gap:8px;align-items:center">Trimite →</button>
+        <p style="font-size:11px;opacity:.6;line-height:1.4">Pe GitHub Pages formularul trimite <b>email real</b> la <b>contact.hoinarii@gmail.com</b> via FormSubmit (fără server). Primești și confirmare + anti-spam. Alternativ <a href="https://www.facebook.com/Hoinarii.Original" target="_blank" style="text-decoration:underline;color:var(--ink)">Facebook</a> / WhatsApp.</p>
+      </form>
+      <div id="volMsg" style="display:none;margin-top:12px;background:var(--lime);padding:12px;border-radius:14px;font-weight:700;font-size:13px"></div>
+    </div>
+    <!-- HARTA OSM -->
+    <div class="reveal" style="border:1px solid var(--line);border-radius:28px;overflow:hidden;background:white;display:flex;flex-direction:column">
+      <div style="padding:18px 18px 0">
+        <div class="kicker">Unde ne găsești</div>
+        <h3 style="font-family:'Syne';font-size:22px;letter-spacing:-.03em;margin-top:6px">Str. Daciei, Nr. 9, Târgu Neamț</h3>
+        <p style="color:#3A445E;font-size:13px;line-height:1.5;margin-top:6px">Sediul oficial. Ne întâlnim aici înainte de livrări & drumeții. Harta e OpenStreetMap — liberă, fără Google.</p>
+      </div>
+      <div style="margin-top:14px;flex:1;min-height:340px;border-top:1px solid var(--line);position:relative;background:#E8EEF5">
+        <iframe title="Harta OSM Hoinarii" loading="lazy" style="width:100%;height:100%;min-height:340px;border:0" src="https://www.openstreetmap.org/export/embed.html?bbox=26.349%2C47.199%2C26.375%2C47.214&layer=mapnik&marker=47.2066%2C26.3622"></iframe>
+        <a href="https://www.openstreetmap.org/search?query=Strada%20Daciei%209%20Targu%20Neamt#map=17/47.2066/26.3622" target="_blank" style="position:absolute;left:12px;bottom:12px;background:white;padding:8px 12px;border-radius:999px;font-weight:800;font-size:12px;box-shadow:0 8px 24px rgba(10,15,30,.14);border:1px solid var(--line)">Deschide în OSM ↗</a>
+        <a href="https://www.google.com/maps/search/Strada+Daciei+9+Targu+Neamt" target="_blank" style="position:absolute;right:12px;bottom:12px;background:var(--ink);color:white;padding:8px 12px;border-radius:999px;font-weight:800;font-size:12px">Google Maps ↗</a>
+      </div>
+      <div style="padding:12px 18px;display:flex;gap:8px;flex-wrap:wrap;background:#FFFBF0;border-top:1px solid var(--line)">
+        <span style="background:white;border:1px solid var(--line);padding:7px 10px;border-radius:999px;font-size:11px;font-weight:800">RO22 BTRL RONC RT0D F0690401</span>
+        <span style="background:var(--lime);padding:7px 10px;border-radius:999px;font-size:11px;font-weight:800">CUI 54680070</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ 3,5% EXTINS -->
+<section class="section wrap" id="faq" style="padding-top:0">
+  <div style="max-width:780px;margin:0 auto">
+    <div class="kicker" style="justify-content:center">Întrebări frecvente</div>
+    <h2 class="h2" style="text-align:center">Tot ce vrei să știi despre <em>3,5%</em></h2>
+    <p style="text-align:center;color:#3A445E;line-height:1.6;margin:0 auto;max-width:620px">Gratuit pentru tine, vital pentru noi. Răspunsuri scurte, fără jargon ANAF.</p>
+    <div style="margin-top:18px;display:grid;gap:10px" id="faqList">
+      <details open style="background:white;border:1px solid var(--line);border-radius:18px;padding:16px"><summary style="cursor:pointer;font-weight:800;display:flex;justify-content:space-between;gap:12px;list-style:none">Ce înseamnă 3,5%? <span style="opacity:.5">—</span></summary><p style="margin-top:10px;color:#3A445E;line-height:1.65;font-size:14px">Statul îți ia deja impozit pe salariu. Prin Formularul 230 alegi ca până la 3,5% din acel impozit să meargă la un ONG ales de tine — la noi, Hoinarii. Tu nu plătești în plus nici un leu.</p></details>
+      <details style="background:white;border:1px solid var(--line);border-radius:18px;padding:16px"><summary style="cursor:pointer;font-weight:800;display:flex;justify-content:space-between;gap:12px;list-style:none">Mă costă ceva? <span style="opacity:.5">+</span></summary><p style="margin-top:10px;color:#3A445E;line-height:1.65;font-size:14px"><b>0 lei.</b> E redirecționare, nu donație. Dacă nu completezi, banii rămân la bugetul de stat.</p></details>
+      <details style="background:white;border:1px solid var(--line);border-radius:18px;padding:16px"><summary style="cursor:pointer;font-weight:800;display:flex;justify-content:space-between;gap:12px;list-style:none">Cum completez? <span style="opacity:.5">+</span></summary><p style="margin-top:10px;color:#3A445E;line-height:1.65;font-size:14px">Intri pe <a href="https://ing.redirectioneaza.ro/asociatia-hoinarii/" target="_blank" style="text-decoration:underline;font-weight:700">ing.redirectioneaza.ro/asociatia-hoinarii</a> — e precompletat cu CUI 54680070 și IBAN RO22 BTRL. Semnezi digital sau pe hârtie. Durează 2 minute.</p></details>
+      <details style="background:white;border:1px solid var(--line);border-radius:18px;padding:16px"><summary style="cursor:pointer;font-weight:800;display:flex;justify-content:space-between;gap:12px;list-style:none">Unde depun formularul? <span style="opacity:.5">+</span></summary><p style="margin-top:10px;color:#3A445E;line-height:1.65;font-size:14px">Online în <b>SPV-ANAF</b> (cel mai simplu), sau fizic la ANAF/poștă. Noi nu avem nevoie de original — ANAF ne virează direct.</p></details>
+      <details style="background:white;border:1px solid var(--line);border-radius:18px;padding:16px"><summary style="cursor:pointer;font-weight:800;display:flex;justify-content:space-between;gap:12px;list-style:none">Ce faceți cu banii? <span style="opacity:.5">+</span></summary><p style="margin-top:10px;color:#3A445E;line-height:1.65;font-size:14px">Pachete la domiciliu (alimente, igienă, haine, rechizite), vizite la case de copii, transport, tabere munte & ateliere radio. Raport foto la fiecare acțiune, fără imagini cu fețe.</p></details>
+      <details style="background:white;border:1px solid var(--line);border-radius:18px;padding:16px"><summary style="cursor:pointer;font-weight:800;display:flex;justify-content:space-between;gap:12px;list-style:none">Pot redirecționa și dacă am venituri din altceva decât salariu? <span style="opacity:.5">+</span></summary><p style="margin-top:10px;color:#3A445E;line-height:1.65;font-size:14px">Da — și pensii, activități independente etc., cu Declarația Unică. Pentru salarii e Formularul 230. Întreabă-ne și te ghidăm.</p></details>
+      <details style="background:white;border:1px solid var(--line);border-radius:18px;padding:16px"><summary style="cursor:pointer;font-weight:800;display:flex;justify-content:space-between;gap:12px;list-style:none">E sigur? Datele mele? <span style="opacity:.5">+</span></summary><p style="margin-top:10px;color:#3A445E;line-height:1.65;font-size:14px">ANAF verificat — ONG 1650/A, CUI 54680070, IBAN BTRLRO22. Datele din Formularul 230 sunt protejate de ANAF (Reg. UE 2016/679). Noi vedem doar suma totală, nu detaliile tale fiscale.</p></details>
+    </div>
+    <div style="margin-top:14px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+      <a href="https://ing.redirectioneaza.ro/asociatia-hoinarii/" target="_blank" style="background:var(--lime);color:var(--ink);padding:14px 20px;border-radius:999px;font-weight:800">Completează 3,5% acum ↗</a>
+      <button onclick="copyText('RO22BTRLRONCRT0DF0690401')" style="background:white;border:1px solid var(--line);padding:14px 20px;border-radius:999px;font-weight:800;cursor:pointer">Copiază IBAN</button>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="footer">
+    <div>
+      <div style="display:flex;gap:10px;align-items:center"><img src="hoinarii-logo.png" style="height:36px;background:white;border-radius:10px;padding:4px" alt=""><b style="font-family:'Syne';color:white">HOINARII</b></div>
+      <p style="margin-top:10px;line-height:1.6;font-size:13px;opacity:.8">Mergem la oameni vulnerabili, la case de copii, la cei cu sănătate precară. Ducem produse, articole, necesități — în limita în care ne încadrăm, dar mereu cu suflet.</p>
+      <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+        <a href="https://www.facebook.com/Hoinarii.Original" target="_blank" style="background:white;color:var(--ink);padding:8px 14px;border-radius:999px;font-weight:800;font-size:12px">Facebook ↗</a>
+        <span style="background:var(--lime);color:var(--ink);padding:8px 12px;border-radius:999px;font-weight:800;font-size:11px">CUI 54680070</span>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;opacity:.5">Contact</div>
+      <p style="margin-top:8px;line-height:1.7;font-size:13px">Str. Daciei, Nr. 9, Târgu Neamț, Neamț<br>RO22 BTRL RONC RT0D F0690401<br>Banca Transilvania • BTRLRO22<br><a href="https://www.facebook.com/Hoinarii.Original" target="_blank" style="color:var(--lime)">Facebook</a></p>
+    </div>
+    <div id="toast" style="display:none"></div>
+    <div>
+      <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;opacity:.5">Date oficiale</div>
+      <p style="margin-top:8px;font-family:monospace;font-size:12px;line-height:1.6">CUI 54680070<br>ONG 1650/A<br>ANAF verificat ✓</p>
+      <div style="margin-top:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);border-radius:12px;padding:10px;font-size:11px;line-height:1.4">Redirecționează 3,5% gratuit</div>
+    </div>
+  </div>
+  <div style="max-width:1220px;margin:16px auto 0;padding-top:14px;border-top:1px solid rgba(255,255,255,.10);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:11px;opacity:.5;width:calc(100% - 24px)">
+    <span>© 2026 Asociația Hoinarii • Târgu Neamț • Făcut cu ♥</span><span>Rapid • Accesibil • Transparent</span>
+  </div>
+</footer>
+
+<div id="donateModal" style="display:none;position:fixed;inset:0;z-index:99;align-items:center;justify-content:center;padding:18px">
+  <div onclick="closeDonate()" style="position:absolute;inset:0;background:rgba(10,15,30,.62);backdrop-filter:blur(8px)"></div>
+  <div style="position:relative;background:white;border-radius:28px;max-width:520px;width:100%;padding:26px;box-shadow:0 30px 80px rgba(0,0,0,.35);border:1px solid var(--line)">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+      <h3 style="font-family:'Syne';font-size:22px;letter-spacing:-.03em">Donează — Hoinarii</h3>
+      <button onclick="closeDonate()" style="width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:#FFFBF0;font-weight:800;cursor:pointer">×</button>
+    </div>
+    <p style="color:#3A445E;line-height:1.6;margin-top:8px;font-size:14px">Transfer bancar direct — orice sumă ajută. Folosește datele de mai jos la OP / Revolut / BT Pay.</p>
+    <div style="margin-top:14px;background:#FFFBF0;border:1px dashed rgba(10,15,30,.14);border-radius:18px;padding:16px;display:grid;gap:10px">
+      <div style="display:flex;justify-content:space-between;gap:10px;font-size:13px"><span style="opacity:.6">Beneficiar</span><b>ASOCIAȚIA "HOINARII"</b></div>
+      <div style="display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:13px"><span style="opacity:.6">CUI</span><b style="font-family:monospace">54680070</b><button class="copy" onclick="copyText('54680070')" style="background:var(--ink);color:white;border:none;padding:7px 12px;border-radius:999px;font-weight:800;cursor:pointer">Copiază</button></div>
+      <div style="display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:13px"><span style="opacity:.6">IBAN RON</span><b style="font-family:monospace;font-size:11px;word-break:break-all;flex:1;text-align:right;margin-right:8px">RO22 BTRL RONC RT0D F069 0401</b><button class="copy" onclick="copyText('RO22BTRLRONCRT0DF0690401')" style="background:var(--lime);color:var(--ink);border:none;padding:7px 12px;border-radius:999px;font-weight:800;cursor:pointer">Copiază IBAN</button></div>
+      <div style="display:flex;justify-content:space-between;gap:10px;font-size:13px"><span style="opacity:.6">Bancă</span><b>Banca Transilvania</b></div>
+      <div style="display:flex;justify-content:space-between;gap:10px;font-size:13px"><span style="opacity:.6">SWIFT</span><b>BTRLRO22</b></div>
+      <div style="display:flex;justify-content:space-between;gap:10px;font-size:13px"><span style="opacity:.6">Sediu</span><b style="text-align:right">Str. Daciei, Nr. 9, Târgu Neamț</b></div>
+    </div>
+    <div style="margin-top:12px;display:grid;gap:8px">
+      <a href="https://ing.redirectioneaza.ro/asociatia-hoinarii/" target="_blank" style="background:var(--ink);color:white;padding:14px;border-radius:999px;text-align:center;font-weight:800">Sau redirecționează 3,5% gratuit ↗</a>
+      <p style="font-size:11px;opacity:.6;text-align:center;line-height:1.4">Donațiile se folosesc 100% pentru pachete, transport și activități. Raport foto la cerere. Mulțumim! ♥</p>
+    </div>
+  </div>
+</div>
+
+<div id="toast2" style="position:fixed;bottom:18px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:white;padding:12px 18px;border-radius:999px;font-weight:800;font-size:13px;box-shadow:0 16px 40px rgba(10,15,30,.22);opacity:0;pointer-events:none;transition:.3s;z-index:99">Copiat ✓</div>
+<script>
+function openDonate(){document.getElementById('donateModal').style.display='flex';document.body.style.overflow='hidden'}
+function closeDonate(){document.getElementById('donateModal').style.display='none';document.body.style.overflow=''}
+function copyText(t){navigator.clipboard.writeText(t).then(()=>{const e=document.getElementById('toast2');e.textContent=t+' copiat ✓';e.style.opacity=1;e.style.transform='translateX(-50%) translateY(0)';setTimeout(()=>{e.style.opacity=0;e.style.transform='translateX(-50%) translateY(20px)'},2000)})}
+const b=document.getElementById('menuBtn'),l=document.getElementById('navLinks');b.addEventListener('click',()=>l.classList.toggle('open'))
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>l.classList.remove('open')))
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.14});document.querySelectorAll('.reveal').forEach(e=>io.observe(e))
+// FAQ toggle +/- 
+document.querySelectorAll('#faqList details').forEach(d=>{d.addEventListener('toggle',()=>{const s=d.querySelector('summary span'); if(s) s.textContent = d.open ? '—' : '+';})})
+// GitHub Pages: FormSubmit trimite email real; fallback WhatsApp dacă JS blochează
+document.getElementById('volForm')?.addEventListener('submit',e=>{
+  // lasă FormSubmit să trimită; arată mesaj instant
+  const fd=new FormData(e.target);
+  const nume=fd.get('nume')||'';
+  const volMsg=document.getElementById('volMsg');
+  if(volMsg){ volMsg.style.display='block'; volMsg.textContent='Se trimite... vei primi confirmare pe email. Mulțumim, '+nume+'!'; }
+  // nu preventDefault -> lasă POST către formsubmit.co
+})
+</script>
+</body>
+</html>

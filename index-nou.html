@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asociația Hoinarii — CUI 54680070 • Târgu Neamț | Comunitate în mișcare</title>
+<meta name="description" content="Asociația Hoinarii — CUI 54680070, Târgu Neamț, Str. Daciei 7. IBAN RO22 BTRL RONC RT0DF0690401 Banca Transilvania. Înscrisă ANAF 3,5% din 10.06.2026. 189 aprecieri Facebook.">
+<link rel="icon" href="hoinarii-logo.png" type="image/png">
+<link rel="stylesheet" href="style-inspired.css">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+/* OVERRIDES - păstrăm stilul inspirației + adăugăm datele oficiale */
+:root{--green:#0B2E1F;--lime:#D6F340;--orange:#E85D2B;--cream:#FFFBF0}
+.brand img{height:42px;width:auto;object-fit:contain}
+.site-header{background:rgba(255,251,240,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(11,46,31,.08)}
+.hero{position:relative;min-height:92vh;display:grid;place-items:center;text-align:center;overflow:hidden;background:#0B2E1F}
+.hero-photo{position:absolute;inset:0;background:url('forest.jpg') center/cover no-repeat;opacity:.55}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(11,46,31,.55) 0%, rgba(11,46,31,.78) 65%, rgba(11,46,31,.92) 100%)}
+.topo-lines{position:absolute;inset:0;opacity:.10;background:radial-gradient(ellipse at 50% 0%, transparent 40%, rgba(255,255,255,.08) 100%),repeating-linear-gradient(90deg, rgba(255,255,255,.06) 0 1px, transparent 1px 120px)}
+.hero-content{position:relative;z-index:2;color:white;max-width:780px;padding:120px 24px 60px}
+.eyebrow{font-family:'DM Sans';font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.85);display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.15);backdrop-filter:blur(8px);padding:8px 14px;border-radius:999px}
+.eyebrow span{width:8px;height:8px;background:#1BC47D;border-radius:50%;box-shadow:0 0 0 6px rgba(27,196,125,.18);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.6}}
+.hero h1{font-family:'Syne';font-weight:800;font-size:clamp(38px,6vw,64px);line-height:.9;letter-spacing:-.04em;margin:18px 0 14px}
+.hero h1 em{font-style:italic;font-weight:600;color:var(--lime)}
+.hero-lead{font-family:'DM Sans';font-size:17px;line-height:1.6;color:rgba(255,255,255,.88);max-width:620px;margin:0 auto}
+.hero-actions{margin-top:22px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;align-items:center}
+.button{padding:14px 22px;border-radius:999px;font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:8px;transition:.2s;text-decoration:none}
+.button-primary{background:var(--lime);color:var(--green);box-shadow:0 10px 30px rgba(214,243,64,.25)}
+.button-primary:hover{transform:translateY(-2px);filter:brightness(1.05)}
+.text-link{color:white;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.06);backdrop-filter:blur(6px)}
+.text-link:hover{background:rgba(255,255,255,.12)}
+.hero-note{position:absolute;left:24px;bottom:24px;z-index:2;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);padding:12px 14px;border-radius:16px;display:flex;gap:10px;align-items:center;text-align:left;color:var(--green);font-size:13px;line-height:1.2;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.hero-note small{font-size:10px;letter-spacing:.12em;text-transform:uppercase;opacity:.6;display:block;font-weight:700}
+.hero-stats-strip{position:absolute;right:24px;bottom:24px;z-index:2;display:flex;gap:10px;flex-wrap:wrap}
+.stat-pill{background:rgba(255,255,255,.10);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.15);padding:10px 14px;border-radius:999px;color:white;font-size:12px;font-weight:700;display:flex;gap:6px;align-items:center}
+.stat-pill b{color:var(--lime)}
+.scroll-cue{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);z-index:2;color:rgba(255,255,255,.7);font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;display:flex;flex-direction:column;align-items:center;gap:6px;text-decoration:none}
+.scroll-line{width:1px;height:32px;background:linear-gradient(white, transparent);opacity:.6}
+.manifesto{position:relative;background:var(--cream);padding:72px 24px 48px;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:start}
+.official-mark{position:absolute;top:24px;right:24px;width:92px;opacity:.08;pointer-events:none}
+.section-kicker{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--orange)}
+.manifesto-copy h2{font-family:'Syne';font-size:42px;letter-spacing:-.04em;line-height:.95;margin:12px 0 14px;color:var(--green)}
+.large-copy{font-size:18px;line-height:1.5;color:#3A4A3E}
+.manifesto-stamp{border:1px dashed rgba(11,46,31,.15);border-radius:20px;padding:18px;display:flex;gap:12px;align-items:center;background:white}
+.id-box{background:var(--green);color:white;border-radius:24px;padding:22px;position:relative;overflow:hidden}
+.id-box::after{content:'';position:absolute;right:-30px;top:-30px;width:140px;height:140px;background:radial-gradient(circle, rgba(214,243,64,.16), transparent 70%)}
+.id-box h4{font-size:10px;letter-spacing:.16em;text-transform:uppercase;opacity:.6;margin-bottom:12px}
+.id-row{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px}
+.id-row:last-child{border:0}
+.copy-btn{background:var(--lime);color:var(--green);border:none;padding:5px 10px;border-radius:999px;font-weight:800;font-size:11px;cursor:pointer}
+.initiatives{max-width:1180px;margin:0 auto;padding:24px}
+.section-heading{display:flex;justify-content:space-between;gap:16px;align-items:end;flex-wrap:wrap}
+.section-heading h2{font-family:'Syne';font-size:38px;letter-spacing:-.04em;line-height:.95;color:var(--green)}
+.initiative-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:18px}
+.initiative-card{background:white;border:1px solid rgba(11,46,31,.08);border-radius:22px;padding:20px;position:relative;transition:.2s}
+.initiative-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(11,46,31,.10)}
+.initiative-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.initiative-top span{font-family:'Syne';font-weight:800;font-size:12px;letter-spacing:.10em;color:var(--orange)}
+.impact{max-width:1180px;margin:24px auto;display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:28px;overflow:hidden;background:white;border:1px solid rgba(11,46,31,.08)}
+.impact-image{position:relative;height:100%;min-height:420px}
+.impact-image img{width:100%;height:100%;object-fit:cover}
+.photo-label{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.92);padding:8px 12px;border-radius:999px;font-weight:700;font-size:12px}
+.impact-content{padding:32px;background:#FFFBF0}
+.impact-content h2{font-family:'Syne';font-size:36px;letter-spacing:-.04em;line-height:.95;color:var(--green)}
+.impact-content h2 em{font-style:italic;color:var(--orange);font-weight:600}
+.impact-fact{background:var(--green);color:white;border-radius:18px;padding:16px;display:flex;gap:12px;align-items:center;margin:16px 0}
+.impact-fact strong{font-family:'Syne';font-size:34px;line-height:1}
+.source-note{font-size:11px;opacity:.6}
+.cta-band{position:relative;min-height:520px;display:grid;place-items:center;text-align:center;overflow:hidden;border-radius:28px;max-width:1180px;margin:24px auto}
+.cta-band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cta-overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(11,46,31,.55), rgba(11,46,31,.88))}
+.cta-content{position:relative;z-index:2;color:white;max-width:720px;padding:32px 24px}
+.cta-content h2{font-family:'Syne';font-size:42px;letter-spacing:-.04em;line-height:.95}
+.button-coral{background:var(--orange);color:white}
+.site-footer{max-width:1180px;margin:0 auto;background:var(--green);color:rgba(255,255,255,.85);border-radius:28px 28px 0 0;padding:28px 24px 18px;margin-top:24px}
+.footer-top{display:grid;grid-template-columns:1.4fr .8fr 1fr;gap:24px}
+@media(max-width:980px){
+  .manifesto{grid-template-columns:1fr}
+  .initiative-grid{grid-template-columns:1fr 1fr}
+  .impact{grid-template-columns:1fr}
+  .hero-stats-strip{position:static;margin-top:16px;justify-content:center}
+  .hero-note{position:static;margin:16px auto 0;width:fit-content}
+  .footer-top{grid-template-columns:1fr}
+}
+@media(max-width:640px){.initiative-grid{grid-template-columns:1fr}}
+#toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--green);color:white;padding:12px 18px;border-radius:999px;font-weight:700;font-size:13px;box-shadow:0 10px 30px rgba(11,46,31,.25);opacity:0;pointer-events:none;transition:.3s;z-index:99}
+</style>
+</head>
+<body>
+<header class="site-header" style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:10px 18px;max-width:1180px;margin:8px auto;left:50%;transform:translateX(-50%);border-radius:999px">
+  <a class="brand" href="#acasa" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--green);font-family:'Syne';font-weight:800;letter-spacing:-.03em">
+    <img src="hoinarii-logo.png" alt="Hoinarii logo" onerror="this.style.display='none'">
+    <span>Hoinarii</span>
+    <span style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;opacity:.6;font-family:'DM Sans';font-weight:700">Târgu Neamț • CUI 54680070</span>
+  </a>
+  <nav class="desktop-nav" style="display:flex;gap:6px;align-items:center">
+    <a href="#despre" style="padding:8px 14px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;color:var(--green)">Despre noi</a>
+    <a href="#directii" style="padding:8px 14px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;color:var(--green)">Ce facem</a>
+    <a href="#impact" style="padding:8px 14px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;color:var(--green)">Impact</a>
+    <a href="#contact" style="padding:8px 14px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;color:var(--green)">Contact</a>
+  </nav>
+  <a class="header-cta" href="https://ing.redirectioneaza.ro/asociatia-hoinarii/" target="_blank" rel="noreferrer" style="background:var(--orange);color:white;padding:10px 18px;border-radius:999px;font-weight:800;font-size:14px;text-decoration:none;display:inline-flex;align-items:center;gap:6px">Redirecționează 3,5% ↗</a>
+</header>
+
+<section class="hero" id="acasa">
+  <div class="hero-photo"></div>
+  <div class="hero-overlay"></div>
+  <div class="topo-lines"></div>
+  <div class="hero-content">
+    <p class="eyebrow"><span></span> Asociație nonguvernamentală · Târgu Neamț · ANAF 10.06.2026 ✓</p>
+    <h1>Nu așteptăm<br>drumuri. <em>Le deschidem.</em></h1>
+    <p class="hero-lead">Punem oamenii în mișcare pentru o comunitate mai curajoasă, mai solidară și mai aproape de natură. <b>189 aprecieri</b> pe Facebook și 5 direcții: umanitar, drumeții, radioamatorism, civic și educație.</p>
+    <div class="hero-actions">
+      <a class="button button-primary" href="https://ing.redirectioneaza.ro/asociatia-hoinarii/" target="_blank" rel="noreferrer">Susține-ne cu 3,5% ↗</a>
+      <a class="text-link button" href="#despre">Descoperă povestea ↓</a>
+    </div>
+    <div style="margin-top:16px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
+      <span class="stat-pill"><b>CUI</b> 54680070</span>
+      <span class="stat-pill"><b>ONG</b> 1650/A/2026</span>
+      <span class="stat-pill"><b>IBAN</b> RO22 BTRL</span>
+      <span class="stat-pill">✓ ANAF verificat 27.06.2026</span>
+    </div>
+  </div>
+  <div class="hero-note">
+    <span class="hero-note-icon" style="width:36px;height:36px;border-radius:50%;background:var(--lime);display:grid;place-items:center">📍</span>
+    <span><small>Punct de plecare</small><b>Târgu Neamț, România</b><br><span style="font-size:11px;opacity:.6">Str. Daciei nr.7 • Neamț</span></span>
+  </div>
+  <a class="scroll-cue" href="#despre"><span>Explorează</span><span class="scroll-line"></span></a>
+</section>
+
+<section class="manifesto" id="despre">
+  <img class="official-mark" src="hoinarii-logo.png" alt="">
+  <div class="manifesto-copy">
+    <div class="section-kicker">/ CINE SUNTEM</div>
+    <h2>Hoinărim cu un scop.</h2>
+    <p class="large-copy">Suntem o organizație nonprofit născută din dorința de a contribui activ la dezvoltarea comunității locale.</p>
+    <p style="margin-top:10px;color:#3A4A3E;line-height:1.6;font-size:14.5px">„Asociația «HOINARII» — Promovarea activităților de a ajuta comunitatea prin acțiuni de filantropie definite prin diverse forme de ajutor față de persoanele defavorizate…” — descrierea oficială de pe Facebook (189 aprecieri).<br><br>În actele oficiale (Registrul Național ONG 1650/A/2026) scopul nostru este: sprijin umanitar și social, promovarea participării active în viața publică prin acțiuni umanitare, radioamatorism & tehnologii moderne, sport & agrement (drumeții, ciclism, camping, turism montan), valori democratice și punte cu instituțiile.</p>
+    <a href="https://www.facebook.com/Hoinarii.Original" target="_blank" rel="noreferrer" style="display:inline-flex;gap:8px;align-items:center;margin-top:14px;font-weight:700;color:var(--green);text-decoration:underline">Urmărește călătoria noastră ↗</a>
+    <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+      <span style="background:white;border:1px solid rgba(11,46,31,.08);padding:8px 12px;border-radius:999px;font-size:12px;font-weight:700">✓ ANAF din 10.06.2026</span>
+      <span style="background:var(--lime);padding:8px 12px;border-radius:999px;font-size:12px;font-weight:800">CUI 54680070</span>
+      <span style="background:var(--green);color:white;padding:8px 12px;border-radius:999px;font-size:12px;font-weight:700">RO22 BTRL RONC RT0D F069 0401</span>
+    </div>
+  </div>
+  <div>
+    <div class="id-box">
+      <h4>Fișă oficială • ANAF + Ministerul Justiției</h4>
+      <div class="id-row"><span>Denumire</span><b>ASOCIAȚIA "HOINARII"</b></div>
+      <div class="id-row"><span>CUI / CIF</span><b>54680070</b> <button class="copy-btn" onclick="copyText('54680070')">Copiază</button></div>
+      <div class="id-row"><span>ONG</span><b>1650/A/2026</b></div>
+      <div class="id-row"><span>Sediu</span><b>Str. Daciei 7, Târgu Neamț</b></div>
+      <div class="id-row"><span>Registrul 3,5%</span><b style="color:var(--lime)">Înscrisă 10.06.2026 ✓</b></div>
+      <div class="id-row"><span>Verificat</span><b>27.06.2026 • anaf.ro</b></div>
+      <div class="id-row"><span>IBAN RON</span><b style="font-family:monospace;font-size:11px">RO22BTRL</b> <button class="copy-btn" onclick="copyText('RO22BTRLRONCRT0DF0690401')">Copiază IBAN</button></div>
+      <div class="id-row"><span>Bancă</span><b>Banca Transilvania</b></div>
+      <div style="margin-top:12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:10px;font-size:11px;line-height:1.4">BTRLRO22 • Calea Dorobanților 30-36, Cluj-Napoca<br>ID interogare ANAF: 192768468</div>
+      <a href="https://ing.redirectioneaza.ro/asociatia-hoinarii/" target="_blank" style="display:block;margin-top:12px;background:var(--lime);color:var(--green);padding:12px;border-radius:999px;text-align:center;font-weight:800;text-decoration:none">Formular 230 precompletat →</a>
+    </div>
+    <div class="manifesto-stamp" style="margin-top:12px">
+      <span style="width:36px;height:36px;border-radius:50%;background:var(--lime);display:grid;place-items:center">✦</span>
+      <span style="font-family:'Syne';font-weight:700;line-height:1.1;color:var(--green)">Din inimă<br>pentru comunitate</span>
+      <img src="https://scontent.fbcm1-1.fna.fbcdn.net/v/t39.30808-1/468862122_584652697306603_2329388760797295664_n.jpg?stp=dst-jpg_tt6&cstp=mx2033x2048&ctp=s720x720&_nc_cat=100&ccb=1-7&_nc_sid=3ab345&_nc_ohc=Ow0p8S0KdeMQ7kNvwFeZqs7&_nc_oc=Adr8qoAkeLyJb9kZlVljF73TWTAmpBjF6z2P2prXF7fdD5mu4oGw2ZP3MWt3UJshZqU&_nc_zt=24&_nc_ht=scontent.fbcm1-1.fna&_nc_gid=qcUa20I_WIpkkNEvyElDGQ" style="width:40px;height:40px;border-radius:50%;margin-left:auto;object-fit:cover;border:2px solid white" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="initiatives" id="directii">
+  <div class="section-heading">
+    <div>
+      <div class="section-kicker light">/ DIRECȚIILE NOASTRE</div>
+      <h2>Patru feluri de a<br>lăsa locul mai bun.</h2>
+    </div>
+    <p style="max-width:360px;color:#5A6A5E;line-height:1.5;font-size:14px">Credem în proiecte concrete, colaborare și în puterea inițiativelor care pornesc de aproape. + Radioamatorism YO.</p>
+  </div>
+  <div class="initiative-grid">
+    <article class="initiative-card"><div class="initiative-top"><span>01</span>🤝</div><h3 style="font-family:'Syne'">Comunitate activă</h3><p style="font-size:13.5px;color:#5A6A5E;line-height:1.5">Creăm contexte în care oamenii se întâlnesc, se implică și transformă ideile bune în inițiative locale. Punte cu instituțiile.</p></article>
+    <article class="initiative-card"><div class="initiative-top"><span>02</span>🎒</div><h3 style="font-family:'Syne'">Tineri în mișcare</h3><p style="font-size:13.5px;color:#5A6A5E;line-height:1.5">Susținem curiozitatea și experiențele care îi ajută pe copii și tineri să crească — camping, ateliere, mentorat.</p></article>
+    <article class="initiative-card"><div class="initiative-top"><span>03</span>🌿</div><h3 style="font-family:'Syne'">Natură & explorare</h3><p style="font-size:13.5px;color:#5A6A5E;line-height:1.5">Aducem spiritul de aventură mai aproape: drumeții, ciclism, turism montan cu respect pentru locurile care ne găzduiesc.</p></article>
+    <article class="initiative-card"><div class="initiative-top"><span>04</span>♥</div><h3 style="font-family:'Syne'">Solidaritate concretă</h3><p style="font-size:13.5px;color:#5A6A5E;line-height:1.5">Ne mobilizăm unde e nevoie: colectăm, sortăm, livrăm bani/bunuri pentru persoane vulnerabile — transparent.</p></article>
+    <article class="initiative-card" style="grid-column:1/-1;background:var(--green);color:white;border:none;display:flex;gap:16px;align-items:center;flex-wrap:wrap"><div style="display:flex;gap:12px;align-items:center"><span style="width:40px;height:40px;border-radius:12px;background:var(--lime);color:var(--green);display:grid;place-items:center">📻</span><div><h3 style="color:white;margin:0">05 • Radioamatorism & STEM</h3><p style="color:rgba(255,255,255,.78);margin:4px 0 0;font-size:13px">YO8 — comunicații, antene, concursuri, tehnologii moderne și comunicații de urgență pentru tineri.</p></div></div><span style="margin-left:auto;background:var(--lime);color:var(--green);padding:8px 14px;border-radius:999px;font-weight:800;font-size:12px">YO • Târgu Neamț</span></article>
+  </div>
+</section>
+
+<section class="impact" id="impact">
+  <div class="impact-image"><img src="community.jpg" alt="Voluntari Hoinarii"><span class="photo-label">Împreună, pe teren</span></div>
+  <div class="impact-content">
+    <div class="section-kicker">/ IMPACT CARE SE VEDE</div>
+    <h2>Dincolo de intenții,<br><em>acțiune.</em></h2>
+    <p style="color:#3A4A3E;line-height:1.6;margin-top:10px">În 2023, Hoinarii s-au numărat printre partenerii unei acțiuni de ecologizare la Târgu Neamț, unde voluntarii au colectat deșeuri și au redat comunității spații mai curate.</p>
+    <div class="impact-fact"><strong>11</strong><span style="font-size:13px;line-height:1.4"><b>saci de deșeuri colectați</b> într-o singură acțiune comunitară</span></div>
+    <p class="source-note">Sursă publică: Agenția pentru Protecția Mediului Neamț, 17 iulie 2023. Plus: 5 direcții active • 189 aprecieri • CUI 54680070.</p>
+    <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+      <span style="background:white;border:1px solid rgba(11,46,31,.08);padding:8px 12px;border-radius:999px;font-size:12px;font-weight:700">Str. Daciei 7</span>
+      <span style="background:var(--lime);padding:8px 12px;border-radius:999px;font-size:12px;font-weight:800">ANAF 3,5% ✓</span>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <img src="forest.jpg" alt="Pădure">
+  <div class="cta-overlay"></div>
+  <div class="cta-content">
+    <span class="section-kicker light" style="color:var(--lime)">/ URMĂTORUL PAS ÎNCEPE CU TINE</span>
+    <h2>Transformă 3,5%<br>în 100% implicare.</h2>
+    <p style="margin:12px 0 14px;color:rgba(255,255,255,.88);line-height:1.6">Redirecționarea nu te costă nimic, dar pentru comunitate poate însemna începutul unui proiect nou. Formular 230 precompletat: CUI 54680070 • IBAN RO22 BTRL RONC RT0D F069 0401 • An 2026.</p>
+    <a class="button button-coral" href="https://ing.redirectioneaza.ro/asociatia-hoinarii/" target="_blank" rel="noreferrer">Completează formularul ↗</a>
+    <div style="margin-top:12px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
+      <button onclick="copyText('54680070')" style="background:white;color:var(--green);padding:8px 14px;border-radius:999px;font-weight:800;border:none;cursor:pointer">Copiază CUI</button>
+      <button onclick="copyText('RO22BTRLRONCRT0DF0690401')" style="background:var(--lime);color:var(--green);padding:8px 14px;border-radius:999px;font-weight:800;border:none;cursor:pointer">Copiază IBAN</button>
+    </div>
+    <p style="font-size:11px;opacity:.6;margin-top:8px">Banca Transilvania • BTRLRO22 • 25 mai termen ANAF • ID 192768468</p>
+  </div>
+</section>
+
+<footer class="site-footer" id="contact">
+  <div class="footer-top">
+    <div>
+      <a style="display:flex;align-items:center;gap:10px;color:white;text-decoration:none;font-family:'Syne';font-weight:800"><img src="hoinarii-logo.png" style="height:32px;background:white;border-radius:8px;padding:4px" alt=""> Hoinarii</a>
+      <p style="margin-top:10px;line-height:1.6;font-size:13px">Explorăm potențialul comunității prin inițiativă, colaborare și proiecte concrete. Târgu Neamț, Str. Daciei 7, Neamț • CUI 54680070 • ONG 1650/A/2026.</p>
+      <a href="https://www.facebook.com/Hoinarii.Original" target="_blank" style="display:inline-flex;gap:8px;align-items:center;margin-top:10px;background:white;color:var(--green);padding:8px 14px;border-radius:999px;font-weight:700;font-size:13px;text-decoration:none">Facebook — 189 aprecieri ↗</a>
+    </div>
+    <div>
+      <span style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;opacity:.6">Navigare</span><br>
+      <a href="#despre" style="color:white;text-decoration:none;line-height:2">Despre noi</a><br>
+      <a href="#directii" style="color:white;text-decoration:none;line-height:2">Ce facem</a><br>
+      <a href="#impact" style="color:white;text-decoration:none;line-height:2">Impact</a><br>
+      <a href="https://www.facebook.com/Hoinarii.Original" target="_blank" style="color:white">Facebook</a>
+    </div>
+    <div>
+      <span style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;opacity:.6">Donații & 3,5%</span>
+      <p style="font-family:monospace;font-size:12px;line-height:1.6;margin-top:6px">CUI 54680070<br>RO22 BTRL RONC RT0D F069 0401<br>Banca Transilvania • BTRLRO22</p>
+      <div style="margin-top:8px;background:rgba(255,255,255,.08);padding:10px;border-radius:12px;font-size:11px;line-height:1.4">Verificat ANAF 27.06.2026 • Înscrisă din 10.06.2026 • Județ Neamț</div>
+    </div>
+  </div>
+  <div style="margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:11px;opacity:.6">
+    <span>© 2026 Asociația „Hoinarii”</span><span>Organizație nonguvernamentală, nonprofit • Târgu Neamț</span><span>Design inspirat • Rapid • Accesibil</span>
+  </div>
+</footer>
+
+<div id="toast">Copiat ✓</div>
+<script>
+function copyText(t){navigator.clipboard.writeText(t).then(()=>showToast(t+' copiat ✓'))}
+function showToast(m){const el=document.getElementById('toast');el.textContent=m;el.style.opacity=1;el.style.transform='translateX(-50%) translateY(0)';setTimeout(()=>{el.style.opacity=0;el.style.transform='translateX(-50%) translateY(20px)'},2000)}
+</script>
+</body>
+</html>
